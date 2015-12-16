@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Game-Puzzle</title>
+  <link rel="stylesheet" type="text/css" href="css/puzzle.css">
+  <script src="js/Dogod.js"></script>
+  <script src="js/puzz.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="cd-mac">
+      <div class="cd-top"></div>
+      <div class="cd-bottom"></div>
+      <div class="cd-camera"></div>
+      <div class="cd-notch"></div>
+      <div class="cd-screen ">
+        <div>
+          <img class="fullScreen" src="images/Fullscreen.jpg">
+        </div>
+        <img class="gameGround" src="images/background.png">
+      </div>
+    </div>
+    <div class="containElm nav">
+      <div class="funBtn">
+        <input type="button" class="btn" value="重开" onclick="refresh();" />
+        <input type="button" class="btn" value="查看原图" onclick="overlay();" />
+      </div>
+    </div>
+    <div class="puzzleContain">
+      <div class="containElm puzzle" id="puzz"></div>
+    </div>
+  </div>
+  <div id="modal-overlay">
+    <div class="modal-data">
+      <img src="images/test.jpg">
+      <p>点击<a onclick="overlay()" href="">这里</a>关闭</p>
+    </div>
+  </div>
+</body>
+
+</html>

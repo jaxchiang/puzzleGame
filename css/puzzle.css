@@ -1,0 +1,179 @@
+.main {
+  margin-top: 150px;
+  margin-left: 20%;
+}
+
+.cd-mac {
+  width: 60em;
+  height: 34.8em;
+}
+
+.cd-mac .cd-top {
+  width: 52em;
+  height: 34em;
+  left: 50%;
+  margin-left: -26em;
+  background: #d6d5da;
+  border-radius: 1.5em 1.5em .6em .6em;
+}
+
+.cd-mac .cd-camera {
+  width: .4em;
+  height: .4em;
+  background: #3c3d3d;
+  left: 50%;
+  margin-left: -.2em;
+  top: .8em;
+  border-radius: .2em;
+}
+
+.cd-mac .cd-screen {
+  width: 48em;
+  height: 30em;
+  background: #3c3d3d;
+  overflow: hidden;
+  border: 1px solid #3c3d3d;
+  top: 2em;
+  left: 50%;
+  margin-left: -24em;
+}
+
+.cd-mac .cd-bottom {
+  width: 100%;
+  height: 1em;
+  bottom: 0;
+  background: #BDBDBD;
+  border-radius: 10em/1.2em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.cd-mac .cd-notch {
+  width: 10em;
+  height: .5em;
+  background: #d6d5da;
+  left: 50%;
+  margin-left: -5em;
+  bottom: .5em;
+  border-radius: 0 0 1em 1em;
+  border-top: 1px solid #BDBDBD;
+}
+
+.cd-mac.cd-pro .cd-top {
+  background: #1C1C1C;
+}
+
+.cd-mac.cd-pro .cd-bottom {
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+
+/*body {
+  font-size: 14px;
+}
+*/
+
+[class^='cd-'],
+[class^='cd-']::after,
+[class^='cd-']::before {
+  margin: 0;
+  padding: 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cd-mac {
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  font-size: 14px;
+  display: block;
+}
+
+[class^='cd-'] *,
+[class^='cd-'] *::after,
+[class^='cd-'] *::before {
+  position: absolute;
+}
+
+.fullScreen {
+  position: relative;
+  width: 672px;
+  height: 420px;
+}
+
+.gameGround {
+  position: absolute;
+  width: 672px;
+  height: 400px;
+}
+
+.puzzleContain {
+  position: fixed;
+  width: 520px;
+  height: 310px;
+  margin-left: 198px;
+  margin-top: 105px;
+}
+
+.puzzle {
+  width: 520px;
+  height: 300px;
+}
+
+.puzz-item {
+  position: absolute;
+  width: 130px;
+  height: 75px;
+}
+
+.nav {
+  position: fixed;
+  width: 70px;
+  height: 316px;
+  background-color: #CCCCCC;
+  margin-left: 117px;
+  margin-top: 97px;
+  border-right: 2px solid #808080;
+}
+
+.funBtn {
+  margin-top: 140px;
+}
+
+.cd-mac {
+  margin: 30px auto;
+}
+
+
+/* 定义模态对话框外面的覆盖层样式 */
+
+#modal-overlay {
+  visibility: hidden;
+  position: absolute;
+  /* 使用绝对定位或固定定位  */
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  background-color: #333;
+  /* 背景半透明 */
+}
+
+
+/* 模态框样式 */
+
+.modal-data {
+  width: 600px;
+  margin: 100px auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 15px;
+  text-align: center;
+}
